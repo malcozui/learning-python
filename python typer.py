@@ -21,14 +21,3 @@ def realistic_typing_string(string: str):
         keyboard.release(char)
         time.sleep(0.12)
 
-# time delay to move my cursor to a notepad window.
-time.sleep(2)
-
-press_keys("b")
-
-press_keycode(Key.cmd)
-
-type_string("penis man")
-
-realistic_typing_string("Hello World!")
-#windows key is Key.cmd
