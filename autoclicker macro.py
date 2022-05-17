@@ -1,4 +1,3 @@
-from ast import And
 from pynput import mouse
 from pynput import keyboard
 from time import sleep
@@ -8,13 +7,12 @@ mouse_b = mouse.Button
 keyboard1 = keyboard.Controller()
 keyboard_keys = keyboard.Key
 
-def autoclicker(number_of_clicks: int):
-    loop = True
+def autoclicker(number_of_clicks: int, sleep_time: float = 0.005):
     for i in range(number_of_clicks):
         mouse.Controller().click(mouse_b.left, 1)
-        sleep(0.05)
+        sleep(sleep_time)
 
-inp: int = input("how many clicks would you like? \n")
+inp = input("how many clicks would you like? \n")
 
 sleep(5)
 autoclicker(int(inp))
