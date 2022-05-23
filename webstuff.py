@@ -6,12 +6,11 @@ port = 5000
 
 # create a socket at server side
 # using TCP / IP protocol
-s = socket.socket(socket.AF_INET,   
-				socket.SOCK_STREAM)
+s = socket.socket(socket.gethostbyaddr("34.250.243.107")[0])
 
 # bind the socket with server
 # and port number
-s.bind(('', port))
+#s.bind((s, port))
 
 # allow maximum 1 connection to
 # the socket
@@ -27,7 +26,7 @@ print("CONNECTION FROM:", str(addr))
 # send message to the client after
 # encoding into binary string
 c.send(b"HELLO, How are you ? \
-	Welcome to Akash hacking World")
+	Welcome to Malcom's hacking World")
 
 msg = "Bye.............."
 c.send(msg.encode())
