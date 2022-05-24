@@ -1,4 +1,4 @@
-from turtle import st
+
 from pynput.keyboard import Key, Controller
 import time
 
