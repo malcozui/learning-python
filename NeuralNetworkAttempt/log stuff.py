@@ -7,3 +7,5 @@ loss = -(math.log(softmax_output[0]) * target_outout[0] +
          math.log(softmax_output[0]) * target_outout[0] +
          math.log(softmax_output[0]) * target_outout[0])
 print(loss)
+loss = -math.log(softmax_output[0])
+print(loss)
