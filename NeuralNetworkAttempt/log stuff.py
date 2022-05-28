@@ -1,11 +1,12 @@
-import math
+import numpy as np
 
-softmax_output = [0.7, 0.1, 0.2]
-target_outout = [1, 0, 0]
+softmax_outputs = np.array([[0.7, 0.1, 0.2],
+                            [0.1, 0.5, 0.4],
+                            [0.02, 0.9, 0.08]])
 
-loss = -(math.log(softmax_output[0]) * target_outout[0] +
-         math.log(softmax_output[0]) * target_outout[0] +
-         math.log(softmax_output[0]) * target_outout[0])
-print(loss)
-loss = -math.log(softmax_output[0])
-print(loss)
+class_targets = [0, 1, 1]
+
+#prints loss of each
+print(-np.log(softmax_outputs [
+    range(len(softmax_outputs)), class_targets
+]))
