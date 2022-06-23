@@ -57,3 +57,5 @@ loss_function = Loss_CatergoricalCrossEntropy()
 loss = loss_function.calculate(activation2.output, y)
 
 print("Loss: ", loss)
+
+# At this point I'd add an optimiser but i dont know how and sendex havent made a video on it yet, sad.
